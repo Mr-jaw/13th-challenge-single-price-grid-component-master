@@ -1,0 +1,163 @@
+:root {
+    --karla: 'Karla', sans-serif;
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: var(--karla);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  padding: 4.7em 1.7em;
+  background-color: var(--light-gray);
+}
+
+footer {
+  position: absolute;
+  bottom: .2em;
+  padding: .1em 1em;
+  background-color: var(--grayish-blue);
+  border-radius: 1em;
+}
+
+.container {
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, .1);
+}
+
+section {
+  padding: 1.5em;
+}
+
+section:nth-child(1) {
+  background-color: var(--white);
+  border-radius: .35em .35em 0 0;
+
+}
+
+section:nth-child(2) {
+  background-color: var(--cyan);
+}
+
+section:nth-child(3) {
+  background-color: var(--light-cyan);
+  border-radius: 0 0 .3em .3em;
+}
+
+.community h1 {
+  font-size: 1.27rem;
+  color: var(--cyan);
+}
+
+.community strong {
+  display: block;
+  padding-right: 1.8em;
+  padding-top: 1.8em;
+  font-size: .96rem;
+  color: var(--bright-yellow);
+}
+
+
+.community-description {
+  font-weight: 400;
+  font-size: .9rem;
+  padding-top: 1.9em;
+  line-height: 1.9;
+  color: var(--grayish-blue);
+}
+
+.subscription {
+  color: var(--white);
+}
+
+.subscription .subscription-heading {
+  font-size: 1.16rem;
+}
+
+.subscription .price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0 .45em 0;
+}
+
+.subscription .price em {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.subscription .price small {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: var(--light-gray);
+}
+
+.subscription .sign-up-link {
+  background-color: var(--bright-yellow);
+  text-decoration: none;
+  color: var(--white);
+  padding: 1em 0;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  border-radius: .3em;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, .17);
+  transition: background-color .6s ease-in-out;
+}
+
+.subscription .button:hover .sign-up-link {
+  background-color: hsl(71, 73%, 45%);
+}
+
+.subscription .button {
+  padding: 2em 0 .14em 0;
+}
+
+.about-us .aboutus-heading {
+  font-size: 1.16rem;
+  color: var(--white);
+}
+
+.about-us .service-list {
+  list-style-type: none;
+  line-height: 1.4;
+  padding-top: 1.1em;
+  font-size: .9rem;
+  width: 15em;
+  font-weight: lighter;
+  color: var(--white);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(255, 255, 255);
+}
