@@ -45,25 +45,26 @@ footer {
   border-radius: 1em;
 }
 
-.container {
+main {
   box-shadow: 0 0 1.5em rgba(0, 0, 0, .1);
+  min-width: 19em;
 }
 
-section {
+.card {
   padding: 1.5em;
 }
 
-section:nth-child(1) {
+.card-1 {
   background-color: var(--white);
   border-radius: .35em .35em 0 0;
 
 }
 
-section:nth-child(2) {
+.card-2 {
   background-color: var(--cyan);
 }
 
-section:nth-child(3) {
+.card-3 {
   background-color: var(--light-cyan);
   border-radius: 0 0 .3em .3em;
 }
